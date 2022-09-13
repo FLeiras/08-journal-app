@@ -1,4 +1,4 @@
-import { singInWithGoogle } from '../../firebase/providers';
+import { registerWidthEmail, singInWithGoogle } from '../../firebase/providers';
 import { chekingCredentials, login, logout } from './authSlice';
 
 export const chekingAuthtentications = (email, password) => {
@@ -14,5 +14,14 @@ export const startGoogleSignIn = (email, password) => {
     if (!result.ok) return dispatch(logout(result.errorMessage));
 
     dispatch(login(result));
+  };
+};
+
+export const startCreateUserWidthEmail = ({ email, displayName, password }) => {
+  return async (dispatch) => {
+    dispatch(chekingCredentials());
+
+    const resp = await registerWidthEmail({ email, password, displayName });
+    console.log(resp);
   };
 };
