@@ -7,6 +7,7 @@ export const JournalPage = () => {
   return (
     <JournalLayout>
       <NothingSelectedView />
+
       {/* <NoteView /> */}
 
       <IconButton
