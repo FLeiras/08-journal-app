@@ -1,5 +1,6 @@
 import { v2 as cloudinary } from 'cloudinary';
-import { fileUpload } from '../../helpers/fileUpload';
+import { fileUpload } from '../../src/helpers';
+/* import { fileUpload } from '../../helpers/fileUpload'; */
 
 cloudinary.config({
   cloud_name: 'darinhlfi',

@@ -3,7 +3,7 @@ import {
   chekingCredentials,
   login,
   logout,
-} from '../../../store/auth/authSlice';
+} from '../../../src/store/auth/authSlice';
 import {
   authenticatedState,
   demoUser,

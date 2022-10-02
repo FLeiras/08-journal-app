@@ -44,7 +44,6 @@ export const startLoginWithEmail = ({ email, password }) => {
     dispatch(chekingCredentials());
 
     const result = await loginWidthEmailAndPassword({ email, password });
-    console.log(result);
 
     if (!result.ok) return dispatch(logout(result));
 
