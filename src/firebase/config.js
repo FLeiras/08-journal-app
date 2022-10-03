@@ -11,7 +11,6 @@ const {
   VITE_STORAGEBUCKET,
   VITE_MESSAGINGSENDERID,
   VITE_APPID,
-  VITE_MEASUREMENTID,
 } = getEnvironments();
 
 const firebaseConfig = {
@@ -21,7 +20,6 @@ const firebaseConfig = {
   storageBucket: VITE_STORAGEBUCKET,
   messagingSenderId: VITE_MESSAGINGSENDERID,
   appId: VITE_APPID,
-  measurementId: VITE_MEASUREMENTID,
 };
 
 export const FireBaseApp = initializeApp(firebaseConfig);
